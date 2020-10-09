@@ -2,8 +2,8 @@ package config
 
 import (
 	"github.com/tinyhubs/properties"
-	"golang-web-template/pkg/logger"
-	"golang-web-template/pkg/utils"
+	"go-web-template/pkg/logger"
+	"go-web-template/pkg/utils"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
 	"os"

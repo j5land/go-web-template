@@ -2,8 +2,8 @@ package router
 
 import (
 	"github.com/gin-gonic/gin"
-	"golang-web-template/pkg/gin/validator"
-	"golang-web-template/pkg/logger"
+	"go-web-template/pkg/gin/validator"
+	"go-web-template/pkg/logger"
 )
 
 var routerEngine *gin.Engine
