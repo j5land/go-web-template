@@ -2,11 +2,12 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"golang-web-template/internal/config"
-	"golang-web-template/internal/entity"
-	"golang-web-template/pkg/gin/response"
-	"golang-web-template/pkg/gin/router"
-	validate "golang-web-template/pkg/gin/validator"
+	"go-web-template/internal/config"
+	"go-web-template/internal/entity"
+	"go-web-template/pkg/gin/response"
+	"go-web-template/pkg/gin/router"
+	validate "go-web-template/pkg/gin/validator"
+	_ "go-web-template/pkg/requests"
 )
 
 func main() {

@@ -2,7 +2,7 @@ package config
 
 import (
 	"fmt"
-	"golang-web-template/pkg/utils"
+	"go-web-template/pkg/utils"
 	"testing"
 )
 

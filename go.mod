@@ -1,4 +1,4 @@
-module golang-web-template
+module go-web-template
 
 go 1.13
 
