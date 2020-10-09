@@ -1,8 +1,30 @@
 # Go-Web-Template
-
 **Go-Web-Template** 是一款基于Golang API微服务脚手架工程（模板工程）
 
-版本最低支持，需求Go 1.13+
+- 版本最低支持，需求Go 1.13+
+- 基于Go Modules
+
+## 快速开始
+快速构建你的基于RESTFul API微服务业务功能
+```go
+//1.绑定路由相对路径
+router.POST("/login", func(c *gin.Context) {
+    //2.创建参数绑定对象
+    var login entity.Login
+    //3.进行参数绑定与校验
+    errString := validate.BindJSON(c, &login)
+    //4.校验结果本地化返回
+    if errString != "" {
+        response.Fail(c, response.ResEntity{Message:errString})
+        return
+    }
+    //5.通用成功响应
+    response.Success(c, response.ResEntity{Data:gin.H{"user":login}})
+})
+```
+
+## Go 应用程序项目目录规范
+基于[Standard Go Project Layout](https://github.com/golang-standards/project-layout/blob/master/README_zh.md)
 
 ## 目前支持特性
 
@@ -25,4 +47,3 @@
 - 消息中间件Kafka
 - Swagger
 - JWT
-
